@@ -1,5 +1,5 @@
-import React from 'react'
-import Todo from './Todo';
+import React from 'react';
+import TodoList from './TodoList';
 
 export default class App extends React.Component {
   constructor() {
@@ -32,13 +32,7 @@ export default class App extends React.Component {
       <div>
         <h1>Todos:</h1>
 
-        <ul>
-          {
-            todos.map(todo => {
-              return (<Todo todo={todo} />)
-            })
-          }
-        </ul>
+        <TodoList todos={todos} />
 
         <form>
           <input/>
