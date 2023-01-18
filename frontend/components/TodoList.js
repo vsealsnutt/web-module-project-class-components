@@ -7,7 +7,7 @@ export default class TodoList extends React.Component {
       <ul>
           {
             this.props.todos.map(todo => {
-              return (<Todo handleToggle={this.props.handleToggle} todo={todo} />)
+              return (<Todo key={todo.id} handleToggle={this.props.handleToggle} todo={todo} />)
             })
           }
         </ul>
